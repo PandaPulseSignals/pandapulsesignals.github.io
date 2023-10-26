@@ -90,10 +90,8 @@
     </footer>
 
     <script>
-    // Function to track the click on the "Subscribe on Telegram" button
-    function trackTelegramClick() {
-      rdt('track', 'SubscribeTelegramClick');
-    }
+    const telegramButton = document.getElementById('telegramButton');
+   telegramButton.addEventListener('click', () => rdt('track', 'AddToCart'));
   </script>
 </body>
 
