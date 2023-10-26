@@ -8,6 +8,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Panda Pulse Trading Signals</title>
     <meta name="description" content="Join Panda Pulse for free and transparent crypto trading signals. Our signals are based on data-driven and analytical insights. No scams, just reliable information.">
+  <!-- Reddit Pixel -->
+  <script>
+    // Function to generate a random External ID
+    function generateExternalID() {
+      return 'USER_' + Math.random().toString(36).substr(2, 9);
+    }
+
+    !function(w,d){
+      if(!w.rdt){
+        var p=w.rdt=function(){
+          p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)
+        };
+        p.callQueue=[];
+        var t=d.createElement("script");
+        t.src="https://www.redditstatic.com/ads/pixel.js";
+        t.async=!0;
+        var s=d.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(t,s)
+      }
+    }(window,document);
+
+    // Initialize Reddit Pixel with a generated External ID
+    var externalID = generateExternalID();
+    rdt('init','a2_dv3swvrtboj7', {"optOut":false,"useDecimalCurrencyValues":true,"externalId": externalID});
+    rdt('track', 'PageVisit');
+  </script>
+  <!-- End Reddit Pixel -->
+
 </head>
 
 <body>
