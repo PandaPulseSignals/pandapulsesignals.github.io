@@ -88,6 +88,18 @@ footer {
   color: #fff;
 }
 
+footer p {
+  margin: 0;
+}
+
+footer a {
+  display: block;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+
 #benefits {
   margin: 2em;
   text-align: center;
